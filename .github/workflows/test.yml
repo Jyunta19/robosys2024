@@ -1,0 +1,12 @@
+name: test           # ワークフローの名前
+
+on: push             # pushイベント（コードの変更）でこのワークフローを実行する
+
+jobs:                # 実行するジョブ（処理）のリスト
+  test:              # 'test'というジョブを作成
+    runs-on: ubuntu-latest  # Ubuntu最新環境で実行
+    steps:               # 手順（手続き）のリスト
+      - uses: actions/checkout@v3  # リポジトリのコードをチェックアウト（取得）
+      - name: All test            # このステップの名前（任意の名前）
+        run: bash -xv ./test.bash  # 'test.bash'というシェルスクリプトを実行
+
