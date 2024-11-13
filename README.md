@@ -1,6 +1,5 @@
 # robosys2024
-ロボットシステム学授業用
-ロボットシステム学の練習リポジトリ
+ロボットシステム学授業用＆ロボットシステム学の練習リポジトリ
 
 # plusコマンド
 ![test](https://github.com/Jyunta19/robosys2024/actions/workflows/test.yml/badge.svg)
