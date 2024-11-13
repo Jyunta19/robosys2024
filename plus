@@ -1,0 +1,17 @@
+#!/bin/bash
+
+# 標準入力からのすべての行を合計する
+sum=0
+while IFS= read -r line; do
+    # 入力が数値かどうかチェック
+    if [[ ! $line =~ ^[0-9]+$ ]]; then
+        echo "Error: Non-numeric input detected." >&2
+        exit 1
+    fi
+    sum=$((sum + line))
+done
+
+# 結果を出力して正常終了
+echo "$sum"
+exit 0
+
